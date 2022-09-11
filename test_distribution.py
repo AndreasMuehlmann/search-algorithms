@@ -4,7 +4,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-from writing import write_plot
+from write_plot import write_2d_plot
 
 
 def count_values_step(array, start_index, step, step_size):
@@ -47,7 +47,7 @@ def main():
     current_dir = os.path.dirname(os.path.abspath(__file__))
     file_name = 'uniform.csv'
     file_path = os.path.join(current_dir, 'distributions', file_name)
-    write_plot(xs, ys, file_path)
+    write_2d_plot(xs, ys, file_path)
 
     '''
     sns.histplot(array)
